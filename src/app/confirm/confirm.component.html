@@ -1,0 +1,47 @@
+<app-header [msg]="msg"></app-header>
+<div id="confirm">
+        <h3> <div id="d1"></div></h3>
+
+    <div class="centered">
+
+    <table>
+        <tr>
+            <td>
+                source:{{src}}
+                destination:{{dest}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+        your fare is {{fare}}
+    </td>    
+    </tr>
+    <tr>
+            <td>
+        journey date {{date}}
+    </td>    
+    </tr>
+    <tr>
+        <td>
+            <button class="btn btn-info" (click)="navigate()" id="b1">confirm booking</button>
+        </td>
+    </tr>
+    <tr>
+            <td>
+
+                    <form action="https://www.google.com/maps?saddr=ahmedabad&daddr=baroda" method="get" target="_blank">
+                    <a href="https://www.google.com/maps?saddr={{src}}&daddr={{dest}}">View in Map</a>
+                    </form>
+            </td>
+        </tr>
+        <tr>
+                <td>
+    
+                        <a routerLink="/home">home</a>
+                </td>
+            </tr>
+    </table>
+    
+</div>
+
+</div>

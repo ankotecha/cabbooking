@@ -1,0 +1,45 @@
+<div id="login">
+        <app-header ></app-header>
+        <!-- <div id="includedcontent"></div> -->
+    <!-- <div id="ak"></div> -->
+    <div id="book">
+      <form class="centered" (ngSubmit)="login1()" [formGroup]="login" method="POST">
+          <!-- <center> -->
+    <h1> Login </h1>
+    <h5 class="text text-danger">{{msg1}}</h5>
+    <table  style="font-size: 1.100em;">
+        
+    <tr>
+    <td>
+    username:
+    </td></tr><tr><td>
+            <input type="text" name="uname" formControlName="uname" required>
+        </td>
+        </tr>
+    <tr>
+    <td>
+    password
+    </td></tr><tr><td>
+            <input type="password" name="pass" formControlName="pass" required>
+        </td>
+        </tr>
+            <tr>
+        <td>
+        <input id="s" type="submit" value="login"  class="btn btn-primary">
+        &nbsp;
+                                <input type="reset"  class="btn btn-danger">
+                                       
+                            </td>
+        </tr>
+                <tr>
+        <td>
+                <a href="/registration">new user</a>
+        </td>
+           
+        </tr>
+    </table></form></div>
+        <div class="footer">
+               
+                        
+            </div>
+        </div>

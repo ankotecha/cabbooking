@@ -1,0 +1,77 @@
+<div class="card">
+    <div class="card-body">
+      <form [formGroup]="angForm" novalidate>
+        <div class="form-group">
+          <label class="col-md-4">Name</label>
+          <input type="text" class="form-control" 
+            formControlName="name" 
+            #name 
+            [(ngModel)] = "user.name"/>
+        </div>
+        <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['name'].errors.required">
+             Name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4">username </label>
+          <input type="text" class="form-control" 
+          formControlName="username" 
+          #username [(ngModel)] = "user.username"/>
+        </div>
+        <div *ngIf="angForm.controls['username'].invalid && (angForm.controls['username'].dirty || angForm.controls['username'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['username'].errors.required">
+            username is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4">password</label>
+          <input type="text" class="form-control" 
+            formControlName="password" 
+            #password
+            [(ngModel)] = "user.password"
+          />
+        </div>
+        <div *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['password'].errors.required">
+            Password is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4">contact</label>
+            <input type="text" class="form-control" 
+              formControlName="contact" 
+              #contact
+              [(ngModel)] = "user.contact"
+            />
+          </div>
+          <div *ngIf="angForm.controls['contact'].invalid && (angForm.controls['contact'].dirty || angForm.controls['contact'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['contact'].errors.required">
+                contact is required.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4">email</label>
+            <input type="text" class="form-control" 
+              formControlName="email" 
+              #email
+              [(ngModel)] = "user.email"
+            />
+          </div>
+          <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['email'].errors.required">
+                email is required.
+            </div>
+          </div>
+        <div class="form-group">
+          <button (click) = "updateUser(name.value,username.value, password.value,contact.value,email.value)" type="submit" class="btn btn-primary"
+          [disabled]="angForm.invalid" >
+            Update User
+          </button>
+        </div>
+        <div>{{msg123}}</div>
+      </form>
+    </div>
+  </div>

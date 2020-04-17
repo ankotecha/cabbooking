@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-body">
+      <form [formGroup]="angForm" novalidate>
+        <div class="form-group">
+          <label class="col-md-4"> Source</label>
+          <input type="text" class="form-control" 
+            formControlName="place1" 
+            #place1 />
+        </div>
+        <div *ngIf="angForm.controls['place1'].invalid && (angForm.controls['place1'].dirty || angForm.controls['place1'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['place1'].errors.required">
+            Name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4">Destination </label>
+          <input type="text" class="form-control" 
+          formControlName="place2" 
+          #place2/>
+        </div>
+        <div *ngIf="angForm.controls['place2'].invalid && (angForm.controls['place2'].dirty || angForm.controls['place2'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['place2'].errors.required">
+            username is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4">distance</label>
+          <input type="text" class="form-control" 
+            formControlName="distance" 
+            #distance
+          />
+        </div>
+        <div *ngIf="angForm.controls['distance'].invalid && (angForm.controls['distance'].dirty || angForm.controls['distance'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['distance'].errors.required">
+            password is required.
+          </div>
+        </div>
+
+          <div class="form-group">
+            <button (click) = "addRoute(place1.value, place2.value, distance.value)" type="submit" class="btn btn-primary"
+            [disabled]="angForm.pristine || angForm.invalid" >
+              Create Route
+            </button>
+            </div>
+    
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body{
+  overflow-x : hidden;
+  font-family: 'Lato',sans-serif;
+  color:#505962;
+}
+
+.offset:before{
+  display: block;
+  content:"";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/*---Navgation --*/
+
+.navbar{
+  text-transform:uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  background: rgba(0,0,0,0.6)!important;
+}
+
+.navbar-brand img{
+  height:0.2rem;
+}
+
+.navbar-nav li{
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#1ebba3;
+}
+
+/*-- landing page --*/
+.cp{
+  width:100%;
+  max-width:100%;
+  position:absolute;
+  top:38%;
+  z-index:1;
+  color:white;
+  text-transform: uppercase;
+}
+.cp h1{
+  font-size:3.8rem;
+  font-weight: 700;
+  letter-spacing:.3rem;
+  text-shadow: .1rem .1rem .8rem black;
+}
+
+.cp h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/*course section */
+.narrow{
+  width:75%;
+  margin:1.5rem auto;
+  padding-top: 2rem;
+}
+
+.narrow h1{
+  font-size: 2.4rem;
+}
+
+.btn-secondary{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: .6rem 1.2rem;
+  margin:1rem;
+  color:white;
+  background-color: #1ebba3;
+  border-color: #1ebba3;
+
+}
+
+.btn-secondary:hover{
+  background-color: #189582;
+  border-color: #189582;
+}
+
+/*features*/
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+
+h3.heading{
+  font-size:1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+  width:3rem;
+  height:.2rem;
+  background-color: #1ebba3;
+  margin:0 auto 2rem;
+}
+
+.fixed-background{
+  z-index:-1;
+}
+/*
+*/
+.cuadro_intro_hover{
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  background-color:#cccccc;
+}
+
+.news_width_300{
+  width: 50%;
+}
+
+.news_width_300_right{
+  margin-left: 145%;
+}
+
+.cuadro_intro_hover p:first-child{
+  text-align:center; 
+  /*margin-top:20px;*/
+}
+
+.caption-text h3 {
+  font-size: 18px;
+}
+
+.cuadro_intro_hover h3{
+  border-top:2px solid white;
+  /*border-bottom:2px solid white; */
+  padding:3px;
+  margin-bottom: -4px;
+  line-height: 22px;
+}
+
+.news_info p{
+  text-align: justify;
+  font-family: "Avenir-Light", sans-serif;
+  font-size: 20px;
+}
+
+.news_info {
+  padding: 14% 0 14% 0;
+  height: 300px;
+  background: #f8f8f8;
+}
+
+.news_single{
+  margin-bottom: 4%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.right_news_section{
+  padding-right: 0!important;
+  margin-bottom: 0;
+}
+
+.badge-meru{
+  border-radius: 4px;
+  background: #00BCD4;
+  font-size: 16px;
+}
+
+.news_link{
+ font-family: "Avenir-Medium", sans-serif;
+ font-size: 16px;
+ position: absolute;
+ bottom: 15px;
+ left: 2%;
+}
+
+p.pm_intersection {
+  font-size: 17px;
+  text-align: center!important;
+}
+
+.caption-text p {
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: justify;
+  line-height: 18px;
+}
+
+.news_link>a, .source_link>a{
+  color: #00BCD4;
+}
+
+.source_link{
+ font-family: "Avenir-Medium", sans-serif;
+ font-size: 16px;
+ position: absolute;
+ bottom: 15px;
+ right: 2%;
+}
+
+.cuadro_intro_hover:hover .caption{
+  opacity: 0.90;
+  transform: translateY(-250px);
+  -webkit-transform:translateY(-250px);
+  -moz-transform:translateY(-250px);
+  -ms-transform:translateY(-250px);
+  -o-transform:translateY(-250px);
+}
+.cuadro_intro_hover img{
+  z-index: 4;
+  width: -webkit-fill-available!important;
+}
+.cuadro_intro_hover .caption{
+  position: absolute;
+  top:50px;
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+  width: 100%;
+}
+.cuadro_intro_hover .blur{
+  background-color: #000000;
+  height: 300px;
+  z-index: 5;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+
+.cuadro_intro_hover .blur:hover{
+  top: 0!important;
+}
+
+.cuadro_intro_hover .caption-text{
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  height: 330px;
+  text-align: center;
+  top:180px;
+  width: 100%;
+  font-size: 16px;
+}
+
+section.news_section {
+  padding: 2% 0 2% 0;
+  background: #ffffff;
+}
+
+
+
+
+
+
+/*
+*/
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}
+
+.clients img{
+  width:100%;
+  border-radius:50%;
+}
+
+blockquote .svg-inline--fa{
+  color:#1ebba3;
+  margin:1rem;
+
+}
+
+footer{
+  background-color: #40474e;
+  color:white;
+  padding:2rem 0 2rem;
+  margin-top: 1rem;
+}
+
+footer img{
+  height:3rem;
+  margin:1.5rem 0;
+}
+
+footer svg.svg-inline--fa{
+  font-size:1.6rem;
+  margin:1.2rem .5rem 0 0;
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

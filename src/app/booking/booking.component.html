@@ -1,0 +1,75 @@
+<div id="booking">
+<app-header [msg]="msg"></app-header>
+
+<div id = "book" >
+    <form class="centered"(ngSubmit)="book()" [formGroup]="booking" style="margin-left:20px" >
+            <h1> Booking </h1>
+            <h5 class="text text-danger">{{msg1}}</h5>
+
+        <table style="font-size: 1.100em;">
+
+            <tr>
+                <td>
+                        source:
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="text" formControlName="src" name="src" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    destination:
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="text" formControlName="dest" name="dest" required>
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        date:
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <input type="datetime-local" formControlName="date" name="date">
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                            <td>
+                                <input type="time"  name="time">
+                            </td>
+                        </tr> -->
+            <!-- <tr>
+                <td>
+                    <input type="checkbox" name="sharing">
+                </td>
+            </tr> -->
+            <tr>
+                <td>
+                    <input type="submit" value="confirm"  class="btn btn-primary">
+                    &nbsp;
+                    <input type="reset"  class="btn btn-danger">
+                </td>
+                  
+
+                
+            </tr>
+        </table>
+    </form>
+    
+    {{e}}
+   
+</div>
+<img src="./assets/img/images.jpg" style="top:90px;left:700px;position:fixed">
+<footer id="f" style="font-size:1.5em; height: 100px;width: 100%;background-color: grey;position:absolute; bottom:0;">
+
+    Book a City Taxi to your destination in town
+    Choose from a range of categories and prices
+</footer>
+</div>
